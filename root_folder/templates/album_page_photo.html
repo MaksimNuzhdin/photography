@@ -1,0 +1,9 @@
+{%extends 'album_page.html'%}
+{%load static%}
+{%block content%}
+{%block photo%}
+<p1>ZHOPA</p1>
+{%for photo in photo_list%}
+    <img  src="{{photo.photo_img.url}}" width="200" height="222" alt="" >
+    {%endfor%}
+{%endblock%}

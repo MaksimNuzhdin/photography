@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block about%}
+<article>
+    <div class="art-header">
+
+        <img src="{{ab.ab_photo.url}}"/>
+
+    </div>
+    <div class="art-content">
+        <h1 class="entry-title">{{ab.ab_title}}</h1>
+        <div class="excerpt"><p>{{ab.ab_text}}</p></div>
+        
+        
+    </div>
+</article>
+{%endblock%}

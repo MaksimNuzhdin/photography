@@ -1,0 +1,55 @@
+{%load static%}
+<link rel="stylesheet" href="css/zerogrid.css">
+<section id="container">
+	<div class="zerogrid">
+		<div class="wrap-container clearfix">
+			<div id="main-content">
+				<div class="wrap-content">
+					
+					<h1 class="entry-title">Contact Us</h1>
+					<article>
+						
+						<div class="art-content">
+							<div class="row">
+								
+								<div class="col-2-3">
+									<div class="wrap-col">
+										<h3>Contact Form</h3>
+										<div class="contact">
+											<div id="contact_form">
+												<form name="form1" id="ff" method="post" action="{%url 'thanks_page'%}">
+                                                    {%csrf_token%}
+													<label class="row">
+														<div class="col-1-2">
+															<div class="wrap-col">
+																<input type="text" name="name" id="name" placeholder="Enter name" required="required" />
+															</div>
+														</div>
+														<div class="col-1-2">
+															<div class="wrap-col">
+																<input type="phone" name="phone" placeholder="Enter phone"  />
+															</div>
+														</div>
+													</label>
+													
+													<label class="row">
+														<div class="wrap-col">
+															<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
+															placeholder="Message"></textarea>
+														</div>
+													</label>
+													<center><input class="sendButton" type="submit" name="submitcontact" value="Submit"></center>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<hr class="line">
+		</div>
+	</div>
+</section>
